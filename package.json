@@ -1,0 +1,38 @@
+{
+    "name" : "connect-error-amazon-ses",
+    "description" : "Middleware to send errors as email through Amazon SES.",
+    "version" : "0.1.0",
+    "author" : {
+        "name" : "Andrew Chilton",
+        "email" : "chilts@appsattic.com",
+        "url" : "http://www.chilts.org/"
+    },
+    "homepage" : "https://github.com/appsattic/connect-error-amazon-ses",
+    "contributors" : [],
+    "devDependencies" : {
+        "tap" : ">= 0.0.11"
+    },
+    "dependencies": {
+        "awssum" : ">= 0.1.2"
+    },
+    "main" : "connect-error-amazon-ses.js",
+    "engines" : { "node": "*" },
+    "repository" : {
+        "type" : "git",
+        "url": "git://github.com/appsattic/connect-error-amazon-ses.git"
+    },
+   "bugs" : {
+        "url" : "http://github.com/appsattic/connect-error-amazon-ses/issues",
+        "mail" : "chilts@appsattic.com"
+    },
+    "licenses" : [{
+        "type": "MIT",
+        "url" : "http://github.com/appsattic/connect-error-amazon-ses/raw/master/LICENSE"
+    }],
+    "keywords" : [
+        "express", "connect", "middleware", "amazon", "ses", "email", "error", "simple email service"
+    ],
+    "scripts" : {
+        "test" : "tap test/"
+    }
+}
