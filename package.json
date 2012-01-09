@@ -1,7 +1,7 @@
 {
     "name" : "connect-error-amazon-ses",
     "description" : "Middleware to send errors as email through Amazon SES.",
-    "version" : "0.1.0",
+    "version" : "0.2.0",
     "author" : {
         "name" : "Andrew Chilton",
         "email" : "chilts@appsattic.com",
