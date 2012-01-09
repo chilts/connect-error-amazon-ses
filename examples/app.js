@@ -1,6 +1,8 @@
 var express = require('express');
-var ses = require('connect-error-amazon-ses');
-var amazon = require('awssum/lib/amazon/amazon');
+var awssum = require('awssum');
+var amazon = awssum.load('amazon/amazon');
+
+var ses = require('../');
 
 var config = {
     accessKeyId     : process.env.ACCESS_KEY_ID,
@@ -10,6 +12,8 @@ var config = {
     email           : process.env.EMAIL,
     subject         : '[example.com error] something went wrong',
 };
+
+// console.log(config);
 
 // set the process.title for showing in 'ps'
 process.title = 'app.js';

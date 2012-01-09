@@ -13,7 +13,7 @@
         "tap" : ">= 0.0.11"
     },
     "dependencies": {
-        "awssum" : ">= 0.1.2"
+        "awssum" : ">= 0.3.x"
     },
     "main" : "connect-error-amazon-ses.js",
     "engines" : { "node": "*" },

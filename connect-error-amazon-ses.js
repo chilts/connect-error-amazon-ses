@@ -10,8 +10,8 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 var awssum = require('awssum');
-var amazon = require('awssum/lib/amazon/amazon.js');
-var sesService = require('awssum/lib/amazon/ses.js');
+var amazon = awssum.load('amazon/amazon');
+var sesService = awssum.load('amazon/ses');
 
 module.exports = function(options) {
     options = options || {};
@@ -25,7 +25,7 @@ module.exports = function(options) {
     var subject         = options.subject || 'An error occurred in your web application (' + process.title + ')';
 
     // make an SES object
-    var ses = new sesService.Ses(accessKeyId, secretAccessKey, awsAccountId, amazon.US_EAST_1);
+    var ses = new sesService(accessKeyId, secretAccessKey, awsAccountId, amazon.US_EAST_1);
 
     return function errorHandler(err, req, res, next) {
         // create the email
